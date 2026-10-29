@@ -1,0 +1,10 @@
+.env*
+!.env.example
+.dev.vars*
+node_modules/
+.wrangler/
+*.log
+*.tar.gz
+*.tgz
+.DS_Store
+Thumbs.db

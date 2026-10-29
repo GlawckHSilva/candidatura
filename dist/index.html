@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#163e35">
+  <meta name="description" content="Prepare uma candidatura com a sua experiência real. Revise seu perfil, entenda a vaga e organize seus materiais.">
+  <title>Candidatura · Sua experiência, bem apresentada</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23163e35'/%3E%3Cpath d='M11 21l6 6 13-15' fill='none' stroke='%23e3efb8' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+  <aside class="sidebar" aria-label="Menu principal">
+    <a href="./" class="brand"><span class="brand-mark" aria-hidden="true">↗</span> candidatura<span class="brand-dot">.</span></a>
+    <p class="sidebar-caption">SEU PRÓXIMO PASSO</p>
+    <button class="nav-item active" id="new-application"><span aria-hidden="true">▤</span> Preparar candidatura <span class="nav-dot"></span></button>
+    <button class="nav-item" id="profile-nav"><span aria-hidden="true">◎</span> Meu perfil</button>
+    <div class="sidebar-note"><span class="tiny-star" aria-hidden="true">✳</span><h3>Você já tem uma história.</h3><p>Vamos encontrar a melhor forma de apresentá-la para cada oportunidade.</p></div>
+    <div class="sidebar-bottom"><span class="avatar" aria-hidden="true">VC</span><div><strong>Seu espaço</strong><span>Uma candidatura por vez</span></div></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>Seu espaço <span class="breadcrumb">/</span> <strong>Nova candidatura</strong></span><span class="prototype-tag"><span aria-hidden="true"></span> Prévia do produto</span></header>
+    <main id="main">
+      <div class="page-heading"><div><div class="eyebrow">MENOS TRABALHO. MAIS CLAREZA.</div><h1>Sua experiência.<br><em>Na direção certa.</em></h1><p>Uma vaga de cada vez. Uma candidatura com a sua história.</p></div><button class="button secondary" id="example"><span aria-hidden="true">▷</span> Explorar exemplo</button></div>
+      <nav class="steps" aria-label="Etapas da candidatura" id="steps"></nav>
+      <div id="demo-banner" class="demo-banner" hidden><strong>Exemplo fictício</strong><span>Perfil e vaga fictícios para conhecer o fluxo. A análise automática ainda não está disponível.</span><button id="exit-example" class="text-button">Sair do exemplo</button></div>
+      <div class="content-grid">
+        <section class="panel form-panel" aria-labelledby="stage-title">
+          <div class="panel-heading"><span class="section-label" id="section-label">01 / SEU PONTO DE PARTIDA</span><span class="pill">Passo <span id="step-count">1 de 4</span></span></div>
+          <div id="stage"></div>
+        </section>
+        <aside class="right-column" aria-label="Sobre sua candidatura">
+          <section class="preview-card"><div class="preview-top"><span class="section-label">DO SEU PERFIL À VAGA</span><span aria-hidden="true">↗</span></div><h2>Uma boa candidatura<br>começa com você.</h2><p>A vaga define o foco.<br>A sua experiência fornece o conteúdo.</p><div class="paper-stack"><div class="paper"><div class="paper-name">SUA PRÓXIMA VERSÃO</div><div class="paper-subtitle">Seu nome · Sua experiência</div><span class="paper-rule"></span><div class="paper-section">EXPERIÊNCIAS RELEVANTES</div><span class="paper-line long"></span><span class="paper-line"></span><span class="paper-line medium"></span><div class="paper-highlight"><span aria-hidden="true">✓</span> Baseado no que você já fez</div><span class="paper-line long"></span><span class="paper-line medium"></span><div class="paper-section">SUAS COMPETÊNCIAS</div><div class="paper-chips"><span></span><span></span><span></span></div></div></div><div class="preview-caption">Conteúdo relevante. Sua história preservada.</div></section>
+          <section class="trust-card"><span class="trust-icon" aria-hidden="true">✓</span><div><h3>Experiência real, sempre.</h3><p>Se faltar uma informação, perguntamos. Uma habilidade que você não tem não entra no currículo.</p></div></section>
+          <section class="session-card"><span class="status-dot" aria-hidden="true"></span><p id="storage-status">Seus dados ficam nesta sessão. Você escolhe se quer salvá-los neste navegador.</p></section>
+        </aside>
+      </div>
+      <footer><span>Feito para você se apresentar com confiança.</span><button id="clear-data" class="text-button">Limpar meus dados</button></footer>
+    </main>
+  </div>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="confirm-clear"><h2>Limpar seus dados?</h2><p>Isso apaga o rascunho desta sessão e o perfil salvo neste navegador.</p><div class="dialog-actions"><button class="button secondary" id="cancel-clear">Cancelar</button><button class="button primary" id="confirm-clear-button">Limpar dados</button></div></dialog>
+</body>
+</html>
